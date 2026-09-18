@@ -917,7 +917,9 @@ int32_t Script_GetMouseFocus(lua_State* L) {
 }
 
 int32_t Script_GetRealmName(lua_State* L) {
-    WHOA_UNIMPLEMENTED(0);
+    const char* realmName = ClientServices::GetSelectedRealmName();
+    lua_pushstring(L, realmName);
+    return 1;
 }
 
 int32_t Script_GetItemQualityColor(lua_State* L) {
