@@ -9,6 +9,7 @@ class CSimpleTop;
 class CGGameUI {
     public:
         // Static variables
+        static WOWGUID s_directionalTarget;
         static CScriptObject* s_gameTooltip;
         static CSimpleTop* s_simpleTop;
 

@@ -1,4 +1,5 @@
 #include "ui/game/GameScript.hpp"
+#include "client/ClientServices.hpp"
 #include "console/CVar.hpp"
 #include "gx/Coordinate.hpp"
 #include "ui/FrameScript.hpp"
@@ -393,7 +394,9 @@ int32_t Script_TargetDirectionFriend(lua_State* L) {
 }
 
 int32_t Script_TargetDirectionFinished(lua_State* L) {
-    WHOA_UNIMPLEMENTED(0);
+    CGGameUI::s_directionalTarget = 0;
+
+    return 0;
 }
 
 int32_t Script_TargetLastTarget(lua_State* L) {

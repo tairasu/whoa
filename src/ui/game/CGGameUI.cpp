@@ -32,6 +32,7 @@
 
 WOWGUID CGGameUI::s_currentObjectTrack;
 uint32_t CGGameUI::s_cursorMoney;
+WOWGUID CGGameUI::s_directionalTarget;
 CScriptObject* CGGameUI::s_gameTooltip;
 bool CGGameUI::s_inWorld;
 WOWGUID CGGameUI::s_lockedTarget;
